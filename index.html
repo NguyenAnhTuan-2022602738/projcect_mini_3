@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Project mini 3</title>
+</head>
+
+<body>
+
+    <!-- category -->
+    <h2 class="title">Danh mục sản phẩm</h2>
+    <ul class="menu" id="menu">
+        <!-- <li class="list-category"></li> -->
+    </ul>
+    <!-- End category -->
+
+    <!-- Products list -->
+    <h2 class="title">Danh sách sản phẩm</h2>
+
+    <div class="search" id="search">
+        <input type="text">
+        <button>Search</button>
+    </div>
+
+    <select name="" id="filter">
+        <option value="mac-dinh">Mặc định</option>
+        <option value="gia-thap-den-cao">Giá thấp đến cao</option>
+        <option value="gia-cao-den-thap">Giá cao đến thấp</option>
+        <option value="giam-gia-nhieu">Giảm giá nhiều</option>
+    </select>
+
+
+    <div class="container">
+        <div id="products" class="product-list">
+            <div class="row" id="row-products">
+
+            </div>
+        </div>
+    </div>
+    <!--End Products list -->
+
+    <!-- pagination -->
+     <div class="pagination">
+        <span class="pagination-button" id="pagination-prev">Prev</span>
+        <span class="pagination-number" id="pagination-number">1</span>
+        <span class="pagination-button" id="pagination-next">Next</span>
+     </div>
+    <!--End pagination -->
+
+    <script type="module" src="./js/category.js"></script>
+    <script type="module" src="./js/product.js"></script>
+</body>
+
+</html>
